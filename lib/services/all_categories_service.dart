@@ -8,6 +8,7 @@ class AllCategoriesService {
     //     await http.get(Uri.parse('$baseUrl/products/categories'));
     //  List<dynamic> data = jsonDecode(response.body);
 
+    // ignore: missing_required_param
     List<dynamic> data = await Api().get(url: '$baseUrl/products/categories');
 
     return data;

@@ -11,6 +11,7 @@ class CategoriesService {
     // List<dynamic> data = jsonDecode(response.body);
 
     List<dynamic> data =
+        // ignore: missing_required_param
         await Api().get(url: '$baseUrl/products/category/$categoryName');
 
     List<ProductModel> productList = [];
