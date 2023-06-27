@@ -10,7 +10,8 @@ class CustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, UpdateProductPage.id);
+        Navigator.pushNamed(context, UpdateProductPage.id,
+            arguments: productModel);
       },
       child: Stack(
         clipBehavior: Clip.none,
@@ -42,7 +43,7 @@ class CustomCard extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(r'$' '${productModel.price.toString()}'),
+                          // Text(r'$' '${productModel.price.toString()}'),
                           const Icon(
                             Icons.favorite,
                             color: Colors.red,

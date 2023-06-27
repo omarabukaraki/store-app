@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         title: const Text(
           'New Trend',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Color(0xff274460)),
         ),
         backgroundColor: Colors.white,
         elevation: 0,
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(
                 FontAwesomeIcons.cartShopping,
-                color: Colors.black,
+                color: Color(0xff274460),
               ))
         ],
       ),
