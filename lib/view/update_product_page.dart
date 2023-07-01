@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:store_app/component/custom_button.dart';
 import 'package:store_app/component/custom_text_field.dart';
 import 'package:store_app/models/product_model.dart';
-import 'package:store_app/services/update_poduct.dart';
+import 'package:store_app/services/update_product.dart';
 import 'package:blurry_modal_progress_hud/blurry_modal_progress_hud.dart';
 
 // ignore: must_be_immutable

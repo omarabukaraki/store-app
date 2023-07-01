@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:store_app/models/product_model.dart';
 import 'package:store_app/services/get_all_products.dart';
+import 'package:store_app/view/update_product_page.dart';
 
 import '../component/custom_card.dart';
 
@@ -22,7 +23,13 @@ class HomePage extends StatelessWidget {
         elevation: 0,
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return UpdateProductPage();
+                  },
+                ));
+              },
               icon: const Icon(
                 FontAwesomeIcons.cartShopping,
                 color: Color(0xff274460),
