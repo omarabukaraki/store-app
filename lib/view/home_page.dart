@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Padding(
         padding:
-            const EdgeInsets.only(left: 12, right: 12, top: 75, bottom: 12),
+            const EdgeInsets.only(left: 13, right: 13, top: 75, bottom: 12),
         child: FutureBuilder<List<ProductModel>>(
           future: AllProductsService().getAllProduct(),
           builder: (context, snapshot) {
