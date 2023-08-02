@@ -3,7 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:store_app/models/product_model.dart';
 import 'package:store_app/services/get_all_products.dart';
 import 'package:store_app/view/update_product_page.dart';
-
 import '../component/custom_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -38,7 +37,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Padding(
         padding:
-            const EdgeInsets.only(left: 13, right: 13, top: 75, bottom: 12),
+            const EdgeInsets.only(left: 12, right: 12, top: 75, bottom: 12),
         child: FutureBuilder<List<ProductModel>>(
           future: AllProductsService().getAllProduct(),
           builder: (context, snapshot) {
