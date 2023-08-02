@@ -7,10 +7,8 @@ import 'package:store_app/models/product_model.dart';
 import 'package:store_app/services/update_product.dart';
 import 'package:blurry_modal_progress_hud/blurry_modal_progress_hud.dart';
 
-// ignore: must_be_immutable
 class UpdateProductPage extends StatefulWidget {
   UpdateProductPage({super.key});
-
   static String id = 'Update Product';
 
   @override
@@ -91,7 +89,7 @@ class _UpdateProductPageState extends State<UpdateProductPage> {
     await UpdateProductService().updateProduct(
         id: product.id,
         title: title == null ? product.title : title!,
-        // price: price ?? product.price.toString(),
+        price: price ?? product.price.toString(),
         desc: desc ?? product.description,
         image: image ?? product.image,
         category: product.category);
