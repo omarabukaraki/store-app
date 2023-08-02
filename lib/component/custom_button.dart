@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class CustomButton extends StatelessWidget {
-  CustomButton({super.key, required this.text, this.onTap});
-  String text;
-  VoidCallback? onTap;
+  const CustomButton({super.key, required this.text, this.onTap});
+  final String text;
+  final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
