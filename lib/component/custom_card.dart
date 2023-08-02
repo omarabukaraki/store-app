@@ -4,8 +4,8 @@ import 'package:store_app/view/update_product_page.dart';
 
 // ignore: must_be_immutable
 class CustomCard extends StatelessWidget {
-  CustomCard({super.key, required this.productModel});
-  ProductModel productModel;
+  const CustomCard({super.key, required this.productModel});
+  final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -40,11 +40,11 @@ class CustomCard extends StatelessWidget {
                       const SizedBox(
                         height: 3,
                       ),
-                      Row(
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           // Text(r'$' '${productModel.price.toString()}'),
-                          const Icon(
+                          Icon(
                             Icons.favorite,
                             color: Colors.red,
                           )

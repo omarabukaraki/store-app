@@ -9,7 +9,7 @@ class UpdateProductService {
       required String desc,
       required String image,
       required String category}) async {
-    print('product id $id');
+    // print('product id $id');
     Map<String, dynamic> data =
         // ignore: missing_required_param
         await Api().put(url: 'https://fakestoreapi.com/products/$id', body: {

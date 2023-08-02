@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class CustomTextField extends StatelessWidget {
-  CustomTextField({
+  const CustomTextField({
     super.key,
     this.hintText,
     required this.icon,
@@ -10,10 +10,10 @@ class CustomTextField extends StatelessWidget {
     this.typeText = false,
   });
 
-  String? hintText;
-  IconData icon;
-  bool typeText;
-  Function(String)? onChanged;
+  final String? hintText;
+  final IconData icon;
+  final bool typeText;
+  final Function(String)? onChanged;
   @override
   Widget build(BuildContext context) {
     return Padding(
