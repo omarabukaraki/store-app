@@ -89,7 +89,7 @@ class _UpdateProductPageState extends State<UpdateProductPage> {
     await UpdateProductService().updateProduct(
         id: product.id,
         title: title == null ? product.title : title!,
-        price: price ?? product.price.toString(),
+        // price: price ?? product.price.toString(),
         desc: desc ?? product.description,
         image: image ?? product.image,
         category: product.category);
