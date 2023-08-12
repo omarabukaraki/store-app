@@ -19,11 +19,11 @@ class CustomTextField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
       child: TextField(
-        // validator: (data) {
-        //   if (data!.isEmpty) {
-        //     return 'field is required';
-        //   }
-        // },
+        validator: (data) {
+          if (data!.isEmpty) {
+            return 'field is required';
+          }
+        },
         onChanged: onChanged,
         obscureText: typeText,
         style: const TextStyle(color: Colors.black),
